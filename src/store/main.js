@@ -5,12 +5,14 @@ import Axios from 'axios'
 import createPersistedState from 'vuex-persistedstate'
 
 import baseInfo_store from './baseInfo'
+import npmList_stroe from './npm'
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
 // 用不同的模块管理vuex存储数据
   modules: {
     baseInfoStore: baseInfo_store,
+    npmListStore: npmList_stroe
   },
   plugins: [createPersistedState({
       storage: window.sessionStorage   //可改为localStorage

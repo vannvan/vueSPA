@@ -2,8 +2,10 @@
 // All Rights Reserved.
 
 import WIcon from './icon/index';
+import WButton from './button/index';
 const components = [
-  WIcon
+  WIcon,
+  WButton
 ]
 
 const install = function(Vue) {
@@ -17,5 +19,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  WIcon
+  WIcon,
+  WButton
 }

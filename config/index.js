@@ -14,13 +14,21 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api': {
-        target:'http://113.113.113.113:8001',  //接口地址
+      '/npm-api': {
+        target:'https://api.npmjs.org/',  //接口地址
         changeOrigin: true,
         pathRewrite: {
           '^/api': ''
         }
       },
+      '/github-api': {
+        target:'https://api.github.com/',  //接口地址
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': ''
+        }
+      },
+
     },
 
     // Various Dev Server settings

@@ -7,15 +7,24 @@ import router from './router'
 import axios from 'axios';
 import "babel-polyfill";
 import store from '@/store/main.js';
-//自定义全局mixin
+
 import mixins from '@/components/common/mixins'
 Vue.mixin(mixins)
-//自定义全局指令
+
 import directive from '@/components/common/directive'
 Vue.use(directive)
-//自定义组件
+
 import WUI from '../packages/index'
+import './wui-theme/src/index.scss'
 Vue.use(WUI)
+
+import lottie from 'vue-lottie';
+Vue.component('lottie', lottie)
+
+
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI);
 
 Vue.config.productionTip = false
 Vue.prototype.$http = axios;

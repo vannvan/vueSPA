@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="spa-content">
+  <div class="spa-content-box">
     <div class="iconBox">
       <div class="iconItem" v-for="(item, index) in iconList" >
         <w-icon :class="item"  :style="{color:RandomColor()}"></w-icon>
@@ -29,18 +29,14 @@ export default {
 
 <style lang="scss">
 .iconBox{
-  width: 90%;
-  height: auto;
-  // margin: 0 auto;
-  display:flex;
-  flex-wrap: wrap;
+  width: 100%;
+  // height: 1200px;
   .iconItem{
     height: 64px;
     width: 100px;
     padding: 10px;
     margin:5px;
-    // float: left;
-    // flex: 1;
+    float: left;
     i{
       font-size: 24px;
     }

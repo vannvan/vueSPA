@@ -15,6 +15,7 @@ module.exports = {
   entry: {
     app: './src/main.js'
   },
+  devtool:'inline-source-map',
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',

@@ -10,9 +10,6 @@ export default {
 }
 </script>
 
-<style>
-#app{
-  text-align: center;
-  margin-top: 50px;
-}
+<style lang="scss">
+
 </style>
