@@ -4,7 +4,6 @@ const mixin = {
      data(){
       return {
         URL_CONFIG:URL_CONFIG,
-        loading:true
       }
      },
      filters:{

@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="spa-content-box" v-loading="loading">
+  <div class="spa-content-box">
     <div>
       <el-row :gutter="24">
         <template v-for="(item, index) in reposList">
@@ -22,8 +22,20 @@
           </el-col>
         </template>
       </el-row>
-    </div>
 
+    </div>
+  <el-dialog
+    title="提示"
+    :visible.sync="dialogVisible"
+    :modal-append-to-body='false'
+    width="30%"
+    >
+    <el-input v-model="githubToken" placeholder="请输入token"></el-input>
+    <span slot="footer" class="dialog-footer">
+      <el-button @click="dialogVisible = false">取 消</el-button>
+      <el-button type="primary" @click="getReposList()">确 定</el-button>
+    </span>
+  </el-dialog>
   </div>
 </template>
 
@@ -31,20 +43,22 @@
 export default {
   data(){
     return {
-      reposList:[]
+      reposList:[],
+      dialogVisible:true,
+      githubToken:''
     }
   },
   mounted() {
     //do something after mounting vue instance
-    this.getReposList()
+    // this.getReposList()
   },
   methods: {
     getReposList() {
-      let token = 'token '
+      let token = 'token '+this.githubToken
       this.$http.defaults.headers.common['Authorization'] = token;
       this.$http.get('https://api.github.com/user/repos')
       .then(res => {
-        this.loading = false
+        this.dialogVisible = false
         this.reposList = res.data
       })
     }
@@ -52,5 +66,5 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 </style>

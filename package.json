@@ -11,8 +11,8 @@
     "push": "node build/push.js",
     "pack": "node build/zip.js"
   },
-  "config":{
-    "prifix":"wwvue-cli"
+  "config": {
+    "prifix": "wwvue-cli"
   },
   "dependencies": {
     "axios": "^0.18.0",
