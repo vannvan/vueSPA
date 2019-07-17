@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     getReposList() {
-      let token = 'token bd60944924c0c74c3db9f3d6bcb83a86a1f9be26'
+      let token = 'token '
       this.$http.defaults.headers.common['Authorization'] = token;
       this.$http.get('https://api.github.com/user/repos')
       .then(res => {
