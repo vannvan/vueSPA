@@ -82,7 +82,7 @@ export default {
       //do something after mounting vue instance
       // this.contentWidth = document.getElementsByClassName("spa-main-box")[0].clientWidth
 
-      console.log(document.getElementsByClassName("spa-content-box")[0].clientWidth)
+      // console.log(document.getElementsByClassName("spa-content-box")[0].clientWidth)
     },
     methods: {
      handleOpen(key, keyPath) {

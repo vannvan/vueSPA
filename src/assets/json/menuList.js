@@ -20,6 +20,9 @@ const menuList = [
     name:"技巧存档",index:'3',children:[
       {
         name:"vue动画",path:'transition',index:'3-1'
+      },
+      {
+        name:"半星评价",path:'HelfRate',index:'3-1'
       }
     ]
   }

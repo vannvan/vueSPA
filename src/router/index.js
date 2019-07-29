@@ -24,22 +24,22 @@ export default new Router({
           }
         },
         {
-          path: '/npmPackages',
-          component: resolve => require(['@/components/views/openSource/npmPackages'], resolve),
+          path: '/NpmPackages',
+          component: resolve => require(['@/components/views/openSource/NpmPackages'], resolve),
           meta:{
               title:'npm包'
           }
         },
         {
-          path: '/githubRepos',
-          component: resolve => require(['@/components/views/openSource/githubRepos'], resolve),
+          path: '/GithubRepos',
+          component: resolve => require(['@/components/views/openSource/GithubRepos'], resolve),
           meta:{
               title:'github仓库'
           }
         },
         {
-          path: '/icon',
-          component: resolve => require(['@/components/views/tools/icon'], resolve),
+          path: '/Icon',
+          component: resolve => require(['@/components/views/tools/Icon'], resolve),
           meta:{
               title:'图标'
           }
@@ -51,6 +51,13 @@ export default new Router({
           component: resolve => require(['@/components/views/demo/transition'], resolve),
           meta:{
               title:'vue动画'
+          }
+        },
+        {
+          path: '/HelfRate',
+          component: resolve => require(['@/components/views/demo/HelfRate'], resolve),
+          meta:{
+              title:'半星评分'
           }
         },
 
