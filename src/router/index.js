@@ -47,8 +47,8 @@ export default new Router({
 
         // demo
         {
-          path: '/transition',
-          component: resolve => require(['@/components/views/demo/transition'], resolve),
+          path: '/Transition',
+          component: resolve => require(['@/components/views/demo/Transition'], resolve),
           meta:{
               title:'vue动画'
           }
@@ -58,6 +58,13 @@ export default new Router({
           component: resolve => require(['@/components/views/demo/HelfRate'], resolve),
           meta:{
               title:'半星评分'
+          }
+        },
+        {
+          path: '/ArchivesTable',
+          component: resolve => require(['@/components/views/archives/Table'], resolve),
+          meta:{
+              title:'文章存档'
           }
         },
 

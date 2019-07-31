@@ -25,6 +25,14 @@ const menuList = [
         name:"半星评价",path:'HelfRate',index:'3-1'
       }
     ]
-  }
+  },
+  {
+    name:"文章存档",index:'4',children:[
+      {
+        name:"文章存档",path:'ArchivesTable',index:'4-1'
+      }
+    ]
+  },
+
 ]
 export default menuList
