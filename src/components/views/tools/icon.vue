@@ -12,6 +12,7 @@
 <script>
 import iconList from '@/assets/js/icon.json'
 export default {
+  name:'Icon',
   data() {
     return {
       iconList:iconList

@@ -25,6 +25,7 @@ const dissatisfied = 'dissatisfied'
 const general = 'general'
 const verydissatisfied = 'verydissatisfied'
 export default {
+  name:'HelfRate',
   data(){
     return {
       score:'',

@@ -9,12 +9,12 @@ export default new Router({
       redirect: '/index'
     },
     {
-      path:'/menu',
-      component: resolve => require(['@/components/common/base/menu.vue'], resolve),
+      path:'/Menu',
+      component: resolve => require(['@/components/common/base/Menu.vue'], resolve),
       children:[
         {
-          path:'/index',
-          component: resolve => require(['@/components/index.vue'], resolve),
+          path:'/Index',
+          component: resolve => require(['@/components/Index.vue'], resolve),
         },
         {
           path: '/HelloWorld',

@@ -41,6 +41,7 @@
 
 <script>
 export default {
+  name:'GithubRepos',
   data(){
     return {
       reposList:[],

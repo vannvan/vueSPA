@@ -26,6 +26,7 @@
 <script>
 import Archives from './archives'
 export default {
+  name:'Table',
   data() {
         return {
           tableData:Archives
@@ -33,16 +34,14 @@ export default {
   },
   mounted() {
     //do something after mounting vue instance
-    console.log(Archives);
   },
   methods: {
     windowLocation(link) {
-      // console.log(row);
       window.open(link);
     }
   }
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="css">
 </style>

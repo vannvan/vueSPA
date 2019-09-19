@@ -8,6 +8,7 @@
 <script>
 import emojiWink from "@/assets/json/43-emoji-wink.json";
 export default {
+  name:'Transition',
   components: {},
   props: {},
   data() {

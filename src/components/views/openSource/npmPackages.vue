@@ -16,6 +16,7 @@
 import echarts from '@/components/common/echarts'
 import { mapState } from 'vuex'
 export default {
+  name:'NpmPackages',
   data() {
     return {
       activeName: "wwvue-cli",
