@@ -22,7 +22,10 @@ const menuList = [
         name:"vue动画",path:'transition',index:'3-1'
       },
       {
-        name:"半星评价",path:'HelfRate',index:'3-1'
+        name:"半星评价",path:'HelfRate',index:'3-2'
+      },
+      {
+        name:'虚拟列表',path:'virtualList',index:'3-3'
       }
     ]
   },

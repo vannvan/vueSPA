@@ -67,6 +67,13 @@ export default new Router({
               title:'文章存档'
           }
         },
+        {
+          path: '/virtualList',
+          component: resolve => require(['@/components/views/virtualList'], resolve),
+          meta:{
+              title:'虚拟列表'
+          }
+        },
 
       ]
     },
